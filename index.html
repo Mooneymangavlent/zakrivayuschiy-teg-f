@@ -10,37 +10,90 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
+    <meta name="color-scheme" content="light dark" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <div class="header__content">
+          <h1 class="header__title">&lt;/HTML&gt;</h1>
+          <h2 class="header__title-low">закрывающий тег</h2>
+          <nav class="theme-menu header__theme-menu">
+            <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+            <ul class="theme-menu__list">
+              <li class="theme-menu__item">
+                <button
+                  type="button"
+                  data-theme="dark"
+                  class="theme-menu__button"
+                >
+                  Темно
+                </button>
+              </li>
+              <li class="theme-menu__item">
+                <button
+                  type="button"
+                  data-theme="auto"
+                  disabled
+                  class="theme-menu__button"
+                >
+                  Авто
+                </button>
+              </li>
+              <li class="theme-menu__item">
+                <button
+                  type="button"
+                  data-theme="light"
+                  class="theme-menu__button"
+                >
+                  Светло
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="cards">
+        <div class="container">
+          <div class="cards__content">
+            <h3 class="cards__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h3>
+            <img class="img" src="./images/image.png" alt="Bus" />
+            <p class="cards__text">
+              Это было самое начало пути. На этом этапе важно было проникнуться
+              основами и настроиться на учёбу. И, возможно, подумать, как новые
+              знания могут повлиять на ваше будущее.
+            </p>
+            <p class="cards__upper-text">
+              Место для ваших воспоминаний о начале обучения.
+            </p>
+            <div class="cards__animations">
+              <button class="card__icon-button">
+                <svg class="like-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="36"
+                  fill="currentColor"    
+                >
+                  <path
+                    fill="#000"
+                    d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0-15h-3v3h3V9Zm0 18h-3v3h3v-3Z"
+                  />
+                </svg>
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
