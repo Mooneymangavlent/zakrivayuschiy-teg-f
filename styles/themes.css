@@ -26,6 +26,7 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --buttontextColor: #fff;
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -50,6 +51,7 @@
         transparent 4px
       ),
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+      --buttontextColor: #fff;
   }
 }
 :root.theme-dark {
@@ -74,6 +76,7 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #007f0c, #004306);
+    --buttontextColor:#00CC14; 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -99,5 +102,6 @@
         transparent 4px
       ),
       linear-gradient(to bottom, #007f0c, #004306);
+      --buttontextColor:#00CC14; 
   }
 }
