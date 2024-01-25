@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --basicFont: "Inter-Flex-Variable", sans-serif;
-  --accentFont: "PressStart2P-Regular", sans-serif;
+  --basicFont: "Inter-Flex-Variable",  fantasy;
+  --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 400;
   --titleWidth: 700;
   --backgroundColor: #ffffff;
@@ -22,4 +22,6 @@
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --buttontextColor: #fff;
+    --heartSparks:#FF0000;
+    --heartContour: #000000;
 }

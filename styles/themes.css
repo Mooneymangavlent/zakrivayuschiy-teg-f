@@ -5,8 +5,8 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-  --basicFont: "Inter-Flex-Variable", sans-serif;
-  --accentFont: "PressStart2P-Regular", sans-serif;
+  --basicFont: "Inter-Flex-Variable", fantasy;
+  --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 400;
   --titleWidth: 700;
   --backgroundColor: #ffffff;
@@ -26,12 +26,14 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-    --buttontextColor: #fff;
+  --buttontextColor: #fff;
+  --heartSparks:#FF0000;
+  --heartContour: #000000;
 }
 @media (prefers-color-scheme: light) {
   :root {
-    --basicFont: "Inter-Flex-Variable", sans-serif;
-    --accentFont: "PressStart2P-Regular", sans-serif;
+    --basicFont: "Inter-Flex-Variable", fantasy;
+    --accentFont: "PressStart2P-Regular", fantasy;
     --textWidth: 400;
     --titleWidth: 700;
     --backgroundColor: #ffffff;
@@ -51,7 +53,10 @@
         transparent 4px
       ),
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-      --buttontextColor: #fff;
+    --buttontextColor: #fff;
+    --heartSparks:#FF0000;
+    --heartContour: #000000;
+    
   }
 }
 :root.theme-dark {
@@ -76,7 +81,9 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #007f0c, #004306);
-    --buttontextColor:#00CC14; 
+  --buttontextColor: #00cc14;
+  --heartSparks:#FF0000;
+  --heartContour: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,6 +109,8 @@
         transparent 4px
       ),
       linear-gradient(to bottom, #007f0c, #004306);
-      --buttontextColor:#00CC14; 
+    --buttontextColor: #00cc14;
+    --heartSparks:#FF0000;
+    --heartContour: #00CC14;
   }
 }
