@@ -390,7 +390,7 @@
   height: 100%;
   background-color: var(--accentColor, #000);
   transform: scaleX(0);
-  transform-origin: 0 0;g
+  transform-origin: 0 0;
   transition: transform 0.5s ease-in-out;
 }
 
