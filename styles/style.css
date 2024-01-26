@@ -330,10 +330,10 @@
 
 .dialog[open] {
   padding: 30px;
-  background-color: var(--bg-color, #fff);
+  background-color: var(--backgroundColor, #fff);
   max-inline-size: 357px;
   min-inline-size: 300px;
-  border: 2px solid var(--acc-color, #000);
+  border: 2px solid var( --accentColor, #000);
   outline: none;
 }
 
@@ -349,7 +349,7 @@
 
 .dialog__floppy-svg {
   position: relative;
-  color: var(--button-text-color, #fff);
+  color: var(--buttontextColor, #fff);
   mix-blend-mode: difference;
 }
 
