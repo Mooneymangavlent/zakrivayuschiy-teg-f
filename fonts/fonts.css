@@ -1,10 +1,11 @@
 /* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
+
 @font-face {
   font-display: swap;
-  font-family: "Inter-Flex-Variable";
+  font-family: Inter-Flex-Variable;
   src: local("Inter-Flex-Variable"),
-    url("../fonts/Inter-Variable.woff2") format("woff2 supports variations"),
-    url("../fonts/Inter-Variable.woff2") format("woff2-variations");
+    url(../fonts/Inter-Variable.woff2) format("woff2 supports variations"),
+    url(../fonts/Inter-Variable.woff2) format("woff2-variations");
     font-weight: 400 785;
   
 }

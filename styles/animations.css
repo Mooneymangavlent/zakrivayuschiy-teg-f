@@ -12,3 +12,80 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.like-icon.is-liked .heart {
+  animation: heart-scaling 0.3s ease-in 0.1s alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heartSparks, red);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon .main-body {
+  fill: var(--backgroundColor, #000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--backgroundColor, #000);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--heartSparks, red);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heartSparks, red);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon .core {
+  fill: var(--backgroundColor, #000);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--backgroundColor, #000);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .core {
+  fill: var(--heartSparks, red);
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heartSparks, red);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s alternate backwards;
+}
+
+@keyframes sparks {
+  
+  to {
+    fill: var(--heartSparks, red);
+  }
+}
+
+@keyframes moving {
+  
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes heart-scaling {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}

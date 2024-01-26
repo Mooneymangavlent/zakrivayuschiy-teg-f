@@ -4,13 +4,14 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
   --basicFont: "Inter-Flex-Variable", fantasy;
   --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 400;
   --titleWidth: 700;
-  --backgroundColor: #ffffff;
-  --accentColor: #000000;
+  --backgroundColor: #fff;
+  --accentColor: #000;
   --bg-image: repeating-linear-gradient(
       to right,
       #d3d3d3,
@@ -27,17 +28,19 @@
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --buttontextColor: #fff;
-  --heartSparks:#FF0000;
-  --heartContour: #000000;
+  --heartSparks:#F00;
+  --heartContour: #000;
 }
+
 @media (prefers-color-scheme: light) {
+
   :root {
     --basicFont: "Inter-Flex-Variable", fantasy;
     --accentFont: "PressStart2P-Regular", fantasy;
     --textWidth: 400;
     --titleWidth: 700;
-    --backgroundColor: #ffffff;
-    --accentColor: #000000;
+    --backgroundColor: #fff;
+    --accentColor: #000;
     --bg-image: repeating-linear-gradient(
         to right,
         #d3d3d3,
@@ -54,17 +57,18 @@
       ),
       linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
     --buttontextColor: #fff;
-    --heartSparks:#FF0000;
-    --heartContour: #000000;
+    --heartSparks:#F00;
+    --heartContour: #000;
     
   }
 }
+
 :root.theme-dark {
   --basicFont: "Inter-Flex-Variable", sans-serif;
   --accentFont: "PressStart2P-Regular", sans-serif;
   --textWidth: 465;
   --titleWidth: 785;
-  --backgroundColor: #000000;
+  --backgroundColor: #000;
   --accentColor: #00cc14;
   --bg-image: repeating-linear-gradient(
       to right,
@@ -82,17 +86,18 @@
     ),
     linear-gradient(to bottom, #007f0c, #004306);
   --buttontextColor: #00cc14;
-  --heartSparks:#FF0000;
+  --heartSparks:#F00;
   --heartContour: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
     --basicFont: "Inter-Flex-Variable", sans-serif;
     --accentFont: "PressStart2P-Regular", sans-serif;
     --textWidth: 465;
     --titleWidth: 785;
-    --backgroundColor: #000000;
+    --backgroundColor: #000;
     --accentColor: #00cc14;
     --bg-image: repeating-linear-gradient(
         to right,
@@ -110,7 +115,7 @@
       ),
       linear-gradient(to bottom, #007f0c, #004306);
     --buttontextColor: #00cc14;
-    --heartSparks:#FF0000;
+    --heartSparks:#F00;
     --heartContour: #00CC14;
   }
 }

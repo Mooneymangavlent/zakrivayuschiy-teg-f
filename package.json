@@ -1,0 +1,18 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^16.2.0"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
