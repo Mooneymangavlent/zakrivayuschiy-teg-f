@@ -113,7 +113,6 @@
 }
 
 @keyframes slideAnimation {
-
   0% {
     transform: translateX(0);
   }
@@ -175,7 +174,6 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--buttontextColor)) {
-
   .watermark {
     -webkit-text-stroke: 1px var(--buttontextColor);
     text-shadow: none;
@@ -285,7 +283,7 @@
   height: 21px;
 }
 
-.dialog-svg{
+.dialog-svg {
   width: 39px;
   height: 39px;
 }
@@ -371,7 +369,6 @@
   flex-shrink: 0;
 }
 
-
 .dialog__text {
   font-size: 14px;
   line-height: 150%;
@@ -418,9 +415,8 @@
 }
 
 @media (width <= 768px) {
-
-  .header__title {
-    padding-block-start: 114px;
+  .header__logo {
+    padding-block-start: 118px;
   }
 
   .card__title {
@@ -433,7 +429,7 @@
   }
 
   .card__text {
-    margin-block-start: 31px;
+    margin-block-start: 29px;
     padding-inline-end: 27px;
   }
 
@@ -441,9 +437,11 @@
     flex-direction: column;
     block-size: 84px;
     inline-size: 306px;
+    justify-content: center;
+    gap: 5px;
   }
 
-  .floppy-svg{
+  .floppy-svg {
     width: 28px;
     height: 28px;
   }
