@@ -38,8 +38,7 @@
   border: 2px solid var(--accentColor);
   background-color: var(--backgroundColor);
 }
-
-.header__title {
+.header__logo {
   font-family: var(--accentFont, sans-serif);
   padding-block-start: 136px;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -47,7 +46,7 @@
   color: var(--accentColor);
 }
 
-.header__title-low {
+.header__title {
   font-family: var(--accentFont, sans-serif);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
@@ -94,7 +93,7 @@
   opacity: 0.3;
 }
 
- .theme-menu__button:hover::after, /*Не понял нужно ли подчёркивание при наведении, пока оставил. */ 
+.theme-menu__button:hover::after, /*Не понял нужно ли подчёркивание при наведении, пока оставил. */ 
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
   opacity: 0.3;
@@ -113,7 +112,6 @@
 }
 
 @keyframes slideAnimation {
-
   0% {
     transform: translateX(0);
   }
@@ -156,6 +154,7 @@
 
 .card__mixin {
   position: relative;
+  border-top: 2px solid var(--accentColor);
 }
 
 .watermark {
@@ -174,7 +173,6 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--buttontextColor)) {
-
   .watermark {
     -webkit-text-stroke: 1px var(--buttontextColor);
     text-shadow: none;
@@ -194,6 +192,7 @@
   margin-block-start: 37px;
   font-weight: var(--textWidth);
   padding: 0 23px;
+  line-height: 21px;
 }
 
 .card__upper-text {
@@ -237,6 +236,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  border: 2px solid var(--accentColor);
 }
 
 .card__like-button:focus {
@@ -268,7 +268,10 @@
   position: relative;
   mix-blend-mode: difference;
 }
-
+.like-icon {
+  width: 39px;
+  height: 36px;
+}
 .floppy-svg {
   position: relative;
   color: var(--buttontextColor, #fff);
@@ -276,7 +279,10 @@
   width: 21px;
   height: 21px;
 }
-
+.dialog-svg{
+  width: 39px;
+  height: 39px;
+}
 .save-btn {
   display: flex;
   background-color: var(--backgroundColor);
@@ -304,6 +310,7 @@
   height: 51px;
   margin: 0 auto;
   margin-block: 52px 100px;
+  border: 2px solid var(--accentColor);
 }
 
 .footer__save:focus {
@@ -333,7 +340,7 @@
   background-color: var(--backgroundColor, #fff);
   max-inline-size: 357px;
   min-inline-size: 300px;
-  border: 2px solid var( --accentColor, #000);
+  border: 2px solid var(--accentColor, #000);
   outline: none;
 }
 
@@ -351,14 +358,17 @@
   position: relative;
   color: var(--buttontextColor, #fff);
   mix-blend-mode: difference;
+  width: 39px;
+  height: 39px;
 }
+
 
 .dialog__text {
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
   color: var(--accentColor, #000);
-  font-family: var(--accent-font-family, fantasy);
+  font-family: var(--accentFont);
 }
 
 .dialog__btn {
@@ -398,10 +408,7 @@
   transform: scaleX(1);
 }
 
-
-
 @media (width <= 768px) {
-
   .header__title {
     padding-block-start: 114px;
   }
@@ -425,6 +432,11 @@
     block-size: 84px;
     inline-size: 306px;
   }
+
+  .floppy-svg{
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .grayscale {
@@ -439,18 +451,18 @@
   filter: contrast(50%) hue-rotate(35deg) saturate(130%);
 }
 
-.invert{
+.invert {
   filter: invert(100%);
 }
 
-.sepia{
+.sepia {
   filter: sepia(90%);
 }
 
-.blur{
+.blur {
   filter: blur(5px);
 }
 
-.rotate{
+.rotate {
   filter: hue-rotate(70deg);
 }

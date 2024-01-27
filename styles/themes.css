@@ -6,7 +6,7 @@
 */
 
 :root.theme-light {
-  --basicFont: "Inter-Flex-Variable", fantasy;
+  --basicFont: "Inter-Flex-Variable", sans-serif;
   --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 400;
   --titleWidth: 700;
@@ -35,7 +35,7 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --basicFont: "Inter-Flex-Variable", fantasy;
+    --basicFont: "Inter-Flex-Variable", sans-serif;
     --accentFont: "PressStart2P-Regular", fantasy;
     --textWidth: 400;
     --titleWidth: 700;
@@ -65,7 +65,7 @@
 
 :root.theme-dark {
   --basicFont: "Inter-Flex-Variable", sans-serif;
-  --accentFont: "PressStart2P-Regular", sans-serif;
+  --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 465;
   --titleWidth: 785;
   --backgroundColor: #000;
@@ -94,7 +94,7 @@
 
   :root {
     --basicFont: "Inter-Flex-Variable", sans-serif;
-    --accentFont: "PressStart2P-Regular", sans-serif;
+    --accentFont: "PressStart2P-Regular", fantasy;
     --textWidth: 465;
     --titleWidth: 785;
     --backgroundColor: #000;

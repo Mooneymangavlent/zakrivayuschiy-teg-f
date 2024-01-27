@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --basicFont: "Inter-Flex-Variable",  fantasy;
+  --basicFont: "Inter-Flex-Variable",  sans-serif;
   --accentFont: "PressStart2P-Regular", fantasy;
   --textWidth: 400;
   --titleWidth: 700;
