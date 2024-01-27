@@ -38,6 +38,7 @@
   border: 2px solid var(--accentColor);
   background-color: var(--backgroundColor);
 }
+
 .header__logo {
   font-family: var(--accentFont, sans-serif);
   padding-block-start: 136px;
@@ -112,6 +113,7 @@
 }
 
 @keyframes slideAnimation {
+
   0% {
     transform: translateX(0);
   }
@@ -173,6 +175,7 @@
 }
 
 @supports (-webkit-text-stroke: 1px var(--buttontextColor)) {
+
   .watermark {
     -webkit-text-stroke: 1px var(--buttontextColor);
     text-shadow: none;
@@ -268,10 +271,12 @@
   position: relative;
   mix-blend-mode: difference;
 }
+
 .like-icon {
   width: 39px;
   height: 36px;
 }
+
 .floppy-svg {
   position: relative;
   color: var(--buttontextColor, #fff);
@@ -279,10 +284,12 @@
   width: 21px;
   height: 21px;
 }
+
 .dialog-svg{
   width: 39px;
   height: 39px;
 }
+
 .save-btn {
   display: flex;
   background-color: var(--backgroundColor);
@@ -352,6 +359,7 @@
   display: flex;
   gap: 20px;
   margin-block-end: 29px;
+  align-items: center;
 }
 
 .dialog__floppy-svg {
@@ -410,6 +418,7 @@
 }
 
 @media (width <= 768px) {
+
   .header__title {
     padding-block-start: 114px;
   }
